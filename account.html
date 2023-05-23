@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="header-container container">
+                <div class="header-contact">
+                    <span>+212 601781388</span>
+                    <span>Our location</span>
+                </div>
+                <p>Super Value Deals - Save more with coupons</p>
+                <a href="#">
+                    <span id="login">Log In </span> / <span id="sign">Sign Up</span>
+                </a>
+            </div>
+        </div>
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <img src="ecommerce website/assets/img/logo.svg" class="logo-img">
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="account.html" class="nav-link">My Account</a></li>
+                    <li><a href="compare.html" class="nav-link">Compare</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+                <div class="header-search">
+                    <input type="text" placeholder="Search for items..." class="search" id="icon-search"
+                        onkeyup="searchDataFromArray(this.value)">
+                    <img src="ecommerce website/assets/img/search.png" class="search-image">
+                </div>
+            </div>
+            <div class="header-user header-user-icon">
+                <a href="wishlist.html">
+                    <img src="ecommerce website/assets/img/icon-heart.svg" class="icons">
+                    <span class="count" id="count-wishlist">1</span>
+                </a>
+                <a href="cart.html">
+                    <img src="ecommerce website/assets/img/icon-cart.svg" class="icons">
+                    <span class="count" id="count-cart">1</span>
+                </a>
+            </div>
+            <img src="menu-line.svg" class="icons btn-menu">
+        </nav>
+        <div class="nav-responsive">
+            <div class="nav-logo-icon">
+                <a href="#" class="logo">
+                    <img src="ecommerce website/assets/img/logo.svg" class="logo-img">
+                </a>
+                <div class="header-user">
+                    <a href="wishlist.html">
+                        <img src="ecommerce website/assets/img/icon-heart.svg" class="icons">
+                        <span class="count" id="count-wishlist">1</span>
+                    </a>
+                    <a href="cart.html">
+                        <img src="ecommerce website/assets/img/icon-cart.svg" class="icons">
+                        <span class="count" id="count-cart">1</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="Search for items..." class="search"
+                    onkeyup="searchDataFromArray(this.value)">
+                <img src="ecommerce website/assets/img/search.png" class="search-image">
+            </div>
+            <div class="nav-menu-responsive">
+                <ul>
+                    <li><a href="index.html" class="nav-link active-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="account.html" class="nav-link">My Account</a></li>
+                    <li><a href="compare.html" class="nav-link">Compare</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <img src="close-line.svg" class="icons btn-menu-two">
+        </div>
+    </header>
+    <!-- MAIN -->
+    <div class="main">
+        <!-- BREADCRUMB -->
+        <section class="breadcrumb">
+            <ul>
+                <li><a href="index.html" class="breadcrumb-link link">Home</a></li>
+                <li><span class="breadcrumb-link">></span></li>
+                <li><a href="account.html" class="breadcrumb-link link">My Account</a></li>
+            </ul>
+        </section>
+        <!-- ACCOUNT -->
+        <section class="account">
+            <div class="account-container">
+                <div class="account-tabs">
+                    <h3 class="account-tab active" id="dashboard">
+                        <img src="list-settings-line.svg" class="icons active">
+                        Dashboard
+                    </h3>
+                    <h3 class="account-tab" id="order">
+                        <img src="shopping-bag-line.svg" class="icons">
+                        Order
+                    </h3>
+                    <h3 class="account-tab" id="porfile">
+                        <img src="user-6-line.svg" class="icons">
+                        Update Profile
+                    </h3>
+                    <h3 class="account-tab" id="address">
+                        <img src="shopping-bag-line.svg" class="icons">
+                        My Address
+                    </h3>
+                    <h3 class="account-tab" id="password">
+                        <img src="user-6-line.svg" class="icons">
+                        Change Password
+                    </h3>
+                    <h3 class="account-tab" id="logout">
+                        <img src="logout-box-r-line.svg" class="icons">
+                        Logout
+                    </h3>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-content tab-active" id="dashboard">
+                        <h3 class="tab-header">Hello Rosie!</h3>
+                        <div class="tab-body">
+                            <p class="tab-description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quae quasi! Ex ipsam
+                                aliquid ipsum veritatis ratione illo aliquam assumenda distinctio enim beatae, eaque
+                                recusandae atque quisquam ea inventore eveniet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="order">
+                        <h3 class="tab-header">Your Orders</h3>
+                        <div class="tab-body">
+                            <table class="order-table">
+                                <tr>
+                                    <th>Order</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Total</th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <td>#1357</td>
+                                    <td>March 20, 2023</td>
+                                    <td>Processing</td>
+                                    <td>$125.00</td>
+                                    <td class="order-view">View</td>
+                                </tr>
+                                <tr>
+                                    <td>#2468</td>
+                                    <td>June 20, 2023</td>
+                                    <td>Completed</td>
+                                    <td>$225.00</td>
+                                    <td class="order-view">View</td>
+                                </tr>
+                                <tr>
+                                    <td>#2366</td>
+                                    <td>August 20, 2023</td>
+                                    <td>Completed</td>
+                                    <td>$315.00</td>
+                                    <td class="order-view">View</td>
+                                </tr>
+                            </table>
+                            <p class="tab-description">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="porfile">
+                        <h3 class="tab-header">Update Profile</h3>
+                        <div class="tab-body">
+                            <form class="form">
+                                <input type="text" placeholder="First Name" class="input-form">
+                                <input type="text" placeholder="Last Name" class="input-form">
+                                <a href="#" class="btn">
+                                    Save
+                                </a>
+                            </form>
+                        </div>
+                        <div class="justify-file">
+                            <input type="file" class="file-img" id="file-img">
+                            <label for="file-img">
+                                Choose Image (100px * 100px)
+                            </label>
+                            <img class="label-src">
+                        </div>
+                    </div>
+                    <div class="tab-content" id="address">
+                        <h3 class="tab-header">My Address</h3>
+                        <div class="tab-body">
+                            <address class="address">
+                                3522 Interstate 75 Business Spur, Sault Ste.
+                                Marie, MI 49783 New York
+                            </address>
+                            <h3 class="edit">Edit</h3>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="password">
+                        <h3 class="tab-header">Password</h3>
+                        <div class="tab-body">
+                            <form action="" class="form">
+                                <input type="password" placeholder="Current Password" class="input-form">
+                                <input type="password" placeholder="Password" class="input-form">
+                                <input type="password" placeholder="Confirm Password" class="input-form">
+                                <a href="#" class="btn">
+                                    Save
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="logout">
+                        <h3 class="tab-header">LogOut</h3>
+                        <div class="tab-body">
+                            <a href="#" class="btn">
+                                LogOut
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="btn-up">
+            <img src="arrow-up-line.svg" class="icons">
+        </button>
+    </div>
+</body>
+<script src="javaScript.js"></script>
+<script src="account.js"></script>
+
+</html>

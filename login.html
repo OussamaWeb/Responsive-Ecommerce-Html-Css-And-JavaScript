@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="header-container container">
+                <div class="header-contact">
+                    <span>+212 601781388</span>
+                    <span>Our location</span>
+                </div>
+                <p>Super Value Deals - Save more with coupons</p>
+                <a href="#">
+                    <span id="login">Log In </span> / <span id="sign">Sign Up</span>
+                </a>
+            </div>
+        </div>
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <img src="ecommerce website/assets/img/logo.svg" class="logo-img">
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="account.html" class="nav-link">My Account</a></li>
+                    <li><a href="compare.html" class="nav-link">Compare</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+                <div class="header-search">
+                    <input type="text" placeholder="Search for items..." class="search" id="icon-search"
+                        onkeyup="searchDataFromArray(this.value)">
+                    <img src="ecommerce website/assets/img/search.png" class="search-image">
+                </div>
+            </div>
+            <div class="header-user header-user-icon">
+                <a href="wishlist.html">
+                    <img src="ecommerce website/assets/img/icon-heart.svg" class="icons">
+                    <span class="count" id="count-wishlist">1</span>
+                </a>
+                <a href="cart.html">
+                    <img src="ecommerce website/assets/img/icon-cart.svg" class="icons">
+                    <span class="count" id="count-cart">1</span>
+                </a>
+            </div>
+            <img src="menu-line.svg" class="icons btn-menu">
+        </nav>
+        <div class="nav-responsive">
+            <div class="nav-logo-icon">
+                <a href="#" class="logo">
+                    <img src="ecommerce website/assets/img/logo.svg" class="logo-img">
+                </a>
+                <div class="header-user">
+                    <a href="wishlist.html">
+                        <img src="ecommerce website/assets/img/icon-heart.svg" class="icons">
+                        <span class="count" id="count-wishlist">1</span>
+                    </a>
+                    <a href="cart.html">
+                        <img src="ecommerce website/assets/img/icon-cart.svg" class="icons">
+                        <span class="count" id="count-cart">1</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="Search for items..." class="search"
+                    onkeyup="searchDataFromArray(this.value)">
+                <img src="ecommerce website/assets/img/search.png" class="search-image">
+            </div>
+            <div class="nav-menu-responsive">
+                <ul>
+                    <li><a href="index.html" class="nav-link active-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="account.html" class="nav-link">My Account</a></li>
+                    <li><a href="compare.html" class="nav-link">Compare</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <img src="close-line.svg" class="icons btn-menu-two">
+        </div>
+    </header>
+    <!-- MAIN -->
+    <div class="main">
+        <!-- BREADCRUMB -->
+        <section class="breadcrumb">
+            <ul>
+                <li><a href="index.html" class="breadcrumb-link link">Home</a></li>
+                <li><span class="breadcrumb-link">></span></li>
+                <li><a href="login.html" class="breadcrumb-link link">Login/Register</a></li>
+            </ul>
+        </section>
+        <!-- LOGIN-REGISTER -->
+        <section class="login-register">
+            <div class="login-register-content">
+                <div class="login">
+                    <h3 class="login-title">Login</h3>
+                    <div class="input-input">
+                        <input type="email" class="input-form" placeholder="Your Email">
+                        <input type="password" class="input-form" placeholder="Password ">
+                    </div>
+                    <a href="#" class="btn">
+                        Login
+                    </a>
+                </div>
+                <div class="register">
+                    <h3 class="register-title">Create Account</h3>
+                    <div class="input-input">
+                        <input type="text" class="input-form" placeholder="Username">
+                        <input type="email" class="input-form" placeholder="Your Email">
+                        <input type="password" class="input-form" placeholder="Password">
+                        <input type="password" class="input-form" placeholder="Confirm password">
+                    </div>
+                    <a href="#" class="btn">
+                        Submit & Register
+                    </a>
+                </div>
+            </div>
+        </section>
+        <button class="btn-up">
+            <img src="arrow-up-line.svg" class="icons">
+        </button>
+    </div>
+</body>
+<script src="javaScript.js"></script>
+</html>

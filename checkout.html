@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="header-container container">
+                <div class="header-contact">
+                    <span>+212 601781388</span>
+                    <span>Our location</span>
+                </div>
+                <p>Super Value Deals - Save more with coupons</p>
+                <a href="#">
+                    <span id="login">Log In </span> / <span id="sign">Sign Up</span>
+                </a>
+            </div>
+        </div>
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <img src="ecommerce website/assets/img/logo.svg" class="logo-img">
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="account.html" class="nav-link">My Account</a></li>
+                    <li><a href="compare.html" class="nav-link">Compare</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+                <div class="header-search">
+                    <input type="text" placeholder="Search for items..." class="search" id="icon-search"
+                        onkeyup="searchDataFromArray(this.value)">
+                    <img src="ecommerce website/assets/img/search.png" class="search-image">
+                </div>
+            </div>
+            <div class="header-user header-user-icon">
+                <a href="wishlist.html">
+                    <img src="ecommerce website/assets/img/icon-heart.svg" class="icons">
+                    <span class="count" id="count-wishlist">1</span>
+                </a>
+                <a href="cart.html">
+                    <img src="ecommerce website/assets/img/icon-cart.svg" class="icons">
+                    <span class="count" id="count-cart">1</span>
+                </a>
+            </div>
+            <img src="menu-line.svg" class="icons btn-menu">
+        </nav>
+        <div class="nav-responsive">
+            <div class="nav-logo-icon">
+                <a href="#" class="logo">
+                    <img src="ecommerce website/assets/img/logo.svg" class="logo-img">
+                </a>
+                <div class="header-user">
+                    <a href="wishlist.html">
+                        <img src="ecommerce website/assets/img/icon-heart.svg" class="icons">
+                        <span class="count" id="count-wishlist">1</span>
+                    </a>
+                    <a href="cart.html">
+                        <img src="ecommerce website/assets/img/icon-cart.svg" class="icons">
+                        <span class="count" id="count-cart">1</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="Search for items..." class="search"
+                    onkeyup="searchDataFromArray(this.value)">
+                <img src="ecommerce website/assets/img/search.png" class="search-image">
+            </div>
+            <div class="nav-menu-responsive">
+                <ul>
+                    <li><a href="index.html" class="nav-link active-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="account.html" class="nav-link">My Account</a></li>
+                    <li><a href="compare.html" class="nav-link">Compare</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <img src="close-line.svg" class="icons btn-menu-two">
+        </div>
+    </header>
+    <!-- MAIN -->
+    <div class="main">
+        <!-- BREADCRUMB -->
+        <section class="breadcrumb">
+            <ul>
+                <li><a href="index.html" class="breadcrumb-link link">Home</a></li>
+                <li><span class="breadcrumb-link">></span></li>
+                <li><a href="cart.html" class="breadcrumb-link link">Cart</a></li>
+                <li><span class="breadcrumb-link">></span></li>
+                <li><a href="checkout.html" class="breadcrumb-link link">Checkout</a></li>
+            </ul>
+        </section>
+        <!-- CHECKOUT -->
+        <section class="checkout">
+            <div class="checkout-container">
+                <div class="checkout-group">
+                    <h3 class="checkout-title">Billing Details</h3>
+                    <div class="input-input">
+                        <input type="text" class="input-form" placeholder="Name">
+                        <input type="text" class="input-form" placeholder="Address">
+                        <input type="text" class="input-form" placeholder="City">
+                        <input type="text" class="input-form" placeholder="Country">
+                        <input type="text" class="input-form" placeholder="Postcode">
+                        <input type="number" class="input-form" placeholder="Phone">
+                        <input type="email" class="input-form" placeholder="Email">
+                        <h3 class="checkout-textarea">Additional information</h3>
+                        <textarea cols="30" rows="10" placeholder="Order note" class="form-input"></textarea>
+                    </div>
+                </div>
+                <div class="checkout-group">
+                    <h3 class="checkout-title">Cart Totals</h3>
+                    <table class="order-table">
+                        <tr>
+                            <th colspan="2">Products</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="ecommerce website/assets/img/product-1-2.jpg" class="order-img">
+
+                            </td>
+                            <td>
+                                <h3 class="order-title">Yidarton Women Summer Blue</h3>
+                                <p class="table-quantity">x2</p>
+                            </td>
+                            <td><span class="table-price">$190.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="ecommerce website/assets/img/product-1-2.jpg" class="order-img">
+
+                            </td>
+                            <td>
+                                <h3 class="order-title">Yidarton Women Summer Blue</h3>
+                                <p class="table-quantity">x2</p>
+                            </td>
+                            <td><span class="table-price">$190.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="ecommerce website/assets/img/product-1-2.jpg" class="order-img">
+
+                            </td>
+                            <td>
+                                <h3 class="order-title">Yidarton Women Summer Blue</h3>
+                                <p class="table-quantity">x2</p>
+                            </td>
+                            <td><span class="table-price">$190.00</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="order-subtile">SubTotal</span></td>
+                            <td colspan="2"><span class="table-price">$280.00</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="order-subtile">Shipping</span></td>
+                            <td colspan="2"><span class="table-price">Free Shipping</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="order-subtile">Total</span></td>
+                            <td colspan="2"><span class="table-price grand-total">$280.00</span></td>
+                        </tr>
+                    </table>
+                    <div class="payment-methods">
+                        <h3 class="checkout-title">Payment</h3>
+                        <div class="all-input">
+                            <div class="input-option">
+                                <input type="radio" name="money" class="payment-input"  id="input-one">
+                                <label for="input-one">Direct Bank Transfer</label>
+                            </div>
+                            <div class="input-option">
+                                <input type="radio" name="money" class="payment-input"  id="input-two">
+                                <label for="input-two">Check Payment</label>
+                            </div>
+                            <div class="input-option">
+                                <input type="radio" name="money" class="payment-input"  id="input-three">
+                                <label for="input-three">Paypal</label>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">
+                            Place order
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="btn-up">
+            <img src="arrow-up-line.svg" class="icons">
+        </button>
+    </div>
+</body>
+<script src="javaScript.js"></script>
+</html>
